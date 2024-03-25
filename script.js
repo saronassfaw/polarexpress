@@ -71,6 +71,11 @@ document.addEventListener("DOMContentLoaded", function() {
   window.addEventListener("scroll", checkScroll);
   window.addEventListener("resize", checkScroll);
 
-  // Check on page load
+
   checkScroll();
 });
+
+function toggleSideBar() {
+  var sidebar = document.getElementById("sidebar");
+  sidebar.classList.toggle("active");
+}
